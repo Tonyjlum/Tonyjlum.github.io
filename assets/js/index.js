@@ -1,16 +1,21 @@
 document.addEventListener("DOMContentLoaded", function(event) {
+  const websitesToWake = [
+    "https://helpinghand-app.herokuapp.com",
+    "https://toque-app.herokuapp.com",
+    "https://linkshells.herokuapp.com",
+    "https://helpinghandapi.herokuapp.com",
+    "https://toqueapi.herokuapp.com/api/v1/users"
+  ]
 
-  const http = new XMLHttpRequest();
-  const url='https://linkshells.herokuapp.com/';
-  http.open("GET", url)
 
-  function httpGet(theUrl)
-{
+  function httpGet(theUrl){
     var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
-}
+    xmlHttp.open( "GET", theUrl, true); // false for synchronous request
+    xmlHttp.send()
+    }
 
-  httpGet("https://toque-app.herokuapp.com")
+    websitesToWake.forEach( theUrl => {
+      httpGet(theUrl)
+    })
+
 })
