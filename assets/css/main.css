@@ -3194,3 +3194,10 @@ input, select, textarea {
 .logo {
 	max-width: 7em;
 }
+
+.article {
+	display: flex;
+}
+.article-info {
+	margin: 1em 1em 1em 1em;
+}
