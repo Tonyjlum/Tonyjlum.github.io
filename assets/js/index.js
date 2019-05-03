@@ -7,15 +7,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     "https://toqueapi.herokuapp.com/api/v1/users"
   ]
 
-
   function httpGet(theUrl){
-    var xmlHttp = new XMLHttpRequest();
+    let xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", theUrl, true);
     xmlHttp.send()
     }
 
-    websitesToWake.forEach( theUrl => {
-      httpGet(theUrl)
-    })
-
+    websitesToWake.forEach( theUrl => httpGet(theUrl))
 })
