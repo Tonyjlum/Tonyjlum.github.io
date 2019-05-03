@@ -3198,6 +3198,10 @@ input, select, textarea {
 .article {
 	display: flex;
 }
-.article-info {
+/* .article-info {
 	margin: 1em 1em 1em 1em;
+} */
+
+.med-img {
+	height: 100;
 }
