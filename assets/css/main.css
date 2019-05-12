@@ -3195,13 +3195,13 @@ input, select, textarea {
 	max-width: 7em;
 }
 
-.article {
+/* .article {
 	display: flex;
 }
-/* .article-info {
+.article-info {
 	margin: 1em 1em 1em 1em;
-} */
+}
 
 .med-img {
 	height: 100;
-}
+} */
